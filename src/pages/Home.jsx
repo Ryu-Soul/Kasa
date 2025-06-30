@@ -1,11 +1,11 @@
 import Header from '../components/Header'
 import MainHome from '../components/Mainhome'
 import Footer from '../components/Footer'
-import '../styles/Home.scss'
+import '../styles/Global.scss'
 
 function Home() {
   return (
-  <div className='home'>
+  <div className='page'>
     <Header />
     <MainHome />
     <Footer />

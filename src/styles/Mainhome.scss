@@ -1,4 +1,11 @@
 .mainHome {
+    display: flex;
+    flex-direction: column;
     width: 1240px;
-    height: 1095px;
+    gap: 43px;
+
+    @media (max-width: 375.2px) {
+        width: 335px;
+        gap: 22px;
+    }
 }

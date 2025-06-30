@@ -1,10 +1,12 @@
 import IMGbanner from '../assets/images/IMG-banner.png'
 import '../styles/Banner.scss'
 
-function Banner () {
+function Banner() {
     return (
         <div className="homeBanner">
-            <h1 style={{ backgroundImage: `url(${IMGbanner})` }}>Chez vous, partout et ailleurs</h1>
+            <img src={IMGbanner} alt='paysage'></img>
+            <div className='overlay'></div>
+            <h1 >Chez vous, partout et ailleurs</h1>
         </div>
     )
 }
