@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1240px;
+    height: 68px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 309px;
+    height: 34px;
+    gap: 57px;
+    top: 17px;
+    left: 931px;
+}
+
+nav {
+    a {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        size: 24px;
+        text-decoration: none;
+        color: #000000;
+
+        &.active-link {
+            text-decoration: underline solid 2px;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+        }
+    }
+}
