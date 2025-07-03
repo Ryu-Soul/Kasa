@@ -1,7 +1,7 @@
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from '../components/global/Header'
+import Footer from '../components/global/Footer'
 import '../styles/Global.scss'
-import Mainabout from '../components/Mainabout'
+import Mainabout from '../components/aboutpage/Mainabout'
 
 function About() {
   return (
