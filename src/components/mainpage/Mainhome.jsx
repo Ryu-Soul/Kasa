@@ -5,7 +5,7 @@ import IMGbanner from '../../assets/images/IMG-banner.png'
 
 function MainHome() {
     return (
-        <div className="mainHome">
+        <div className="main">
             <Banner picture={IMGbanner} title={'Chez vous, partout et ailleurs'} />
             <Card />
         </div>

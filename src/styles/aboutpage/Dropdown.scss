@@ -1,0 +1,118 @@
+.Valeurs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1240px;
+    gap: 30px;
+
+    @media (max-width: 375.2px) {
+        width: 335px;
+    }
+    @media (min-width: 376px) and (max-width: 1439px) {
+            width: 100%;
+    }
+
+    .Dropdown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .Valeur {
+            background: #FF6060;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 1003px;
+            height: 52px;
+
+            @media (max-width: 375.2px) {
+                width: 335px;
+                height: 30px;
+            }
+            @media (min-width: 376px) and (max-width: 1439px) {
+            width: 90%;
+            }
+
+            h1 {
+                font-family: 'Montserrat';
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 24px;
+                line-height: 143%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                color: white;
+
+                @media (max-width: 375.2px) {
+                    font-size: 13px;
+                }
+            }
+
+            img {
+                width: 32px;
+                height: 32px;
+
+                transition: transform 0.3s ease;
+                cursor: pointer;
+
+                @media (max-width: 375.2px) {
+                    width: 16px;
+                    height: 9.14px;
+                }
+
+                &.rotated {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .DescriptionValeur {
+            position: relative;
+            max-height: 0;
+            max-width: 997px;
+            overflow: hidden;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 143%;
+            letter-spacing: 0%;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: #F6F6F673;
+            opacity: 0;
+            transition: max-height 0.4s ease, opacity 0.4s ease;
+
+            @media (max-width: 375.2px) {
+                width: 335px;
+                font-size: 12px;
+            }
+            @media (min-width: 376px) and (max-width: 1439px) {
+            width: 90%;
+            font-size: 14px;
+            }
+            p {
+                transform: translateY(-20px);
+                transition: transform 0.4s ease;
+            }
+        }
+
+        .DescriptionValeur.active {
+            max-height: 104px;
+            overflow: visible;
+            opacity: 1;
+
+            @media (max-width: 375.2px) {
+                max-height: 500px;
+            }
+
+            p {
+                transform: translateY(0);
+            }
+        }
+    }
+}

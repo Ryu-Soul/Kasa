@@ -6,8 +6,8 @@ function Card() {
     return (
         <div className='gallery'>
             {Locations.map(({ title, cover, id }) => (
-                <Link to={`../locationPage/${id}`}>
-                    <div className='card' key={id}>
+                <Link to={`../locationPage/${id}`} key={id}>
+                    <div className='card'>
                         <img src={cover} alt={title}></img> <p>{title}</p>
                     </div>
                 </Link>
