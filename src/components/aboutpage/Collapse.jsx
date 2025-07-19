@@ -1,9 +1,14 @@
 import Dropdown from "./Dropdown"
+import { Valeurs } from '../../data/Valeurs'
 
-function Collapse () {
+function Collapse() {
     return (
         <div className="Valeurs">
-            <Dropdown />
+            {Valeurs.map((item, index) => (
+                <Dropdown key={index} title={item.valeur}>
+                    <p>{item.Description}</p>
+                </Dropdown>
+            ))}
         </div>
     )
 }

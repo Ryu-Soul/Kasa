@@ -1,3 +1,39 @@
+.location-page {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+        max-width: 1240px;
+        max-height: 520px;
+}
+.Information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.DescriptionLoc {
+    max-width: 635px;
+    max-height: 77px;
+}
+
+.Hoststars {
+
+    .Hostinfo {
+        display: flex;
+        flex-direction: row;
+        max-width: 167px;
+        max-height: 64px;
+
+        img {
+            max-width: 64px;
+            max-height: 64px;
+            border-radius: 30px;
+        }
+    }
+}
+
 .dropdowns {
     display: flex;
     flex-direction: row;
