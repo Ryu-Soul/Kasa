@@ -1,13 +1,14 @@
 import '../../styles/MainHome.scss'
+import '../../styles/aboutpage/About.scss'
 import Banner from '../global/Banner'
 import IMGabout from '../../assets/images/IMGabout.jpg'
-import Collapse from './Collapse'
+import DropdownAbout from './DropdownAbout'
 
 function Mainabout() {
     return (
         <div className="main">
             <Banner picture={IMGabout} title={''} />
-            <Collapse />
+            <DropdownAbout />
         </div>
     )
 }

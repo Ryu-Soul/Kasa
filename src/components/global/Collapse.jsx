@@ -1,8 +1,8 @@
-import '../../styles/aboutpage/Dropdown.scss'
+import '../../styles/global/Dropdown.scss'
 import Arrow from '../../assets/images/arrow_back.png'
 import { useState } from 'react'
 
-function Dropdown({ title, children }) {
+function Dropdown({ title, content }) {
 
     const [isDescOpen, setIsDescOpen] = useState(false)
 
@@ -18,7 +18,7 @@ function Dropdown({ title, children }) {
                 />
             </div>
             <div className={`DescriptionValeur ${isDescOpen ? 'active' : ''}`}>
-                <p>{children}</p>
+                {content}
             </div>
         </div>
     )

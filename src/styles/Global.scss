@@ -1,18 +1,19 @@
-
 body {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  width: 100%;
-  max-width: 1440px;
-  min-height: 100vh;
-  @media (min-width: 1440.3px) and (max-width: 3840px) {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    max-width: 1440px;
+    min-height: 100vh;
+
+    @media (min-width: 1440.3px) and (max-width: 3840px) {
         max-width: 3840px;
     }
 }
+
 #root {
-  width: 100% !important;
-  max-width: none !important;
+    width: 100% !important;
+    max-width: none !important;
 }
 
 .page {
@@ -25,19 +26,45 @@ body {
     width: 100%;
     max-width: 1440px;
     min-height: 100vh;
+
     @media (max-width: 375.2px) {
         max-width: 375px;
     }
+
     @media (min-width: 376px) and (max-width: 424px) {
         width: 100%;
     }
+
     @media (min-width: 425px) and (max-width: 1024px) {
         width: 100%;
     }
+
     @media (min-width: 376px) and (max-width: 1439.8px) {
         width: 100%;
     }
+
     @media (min-width: 1440.3px) and (max-width: 3840px) {
         max-width: 3840px;
     }
+}
+
+
+h1 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 143%;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+
+}
+
+p {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 143%;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+
 }

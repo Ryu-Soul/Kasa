@@ -1,21 +1,9 @@
-.Valeurs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1240px;
-    gap: 30px;
-
-    @media (max-width: 375.2px) {
-        width: 335px;
-    }
-    @media (min-width: 376px) and (max-width: 1439px) {
-            width: 100%;
-    }
 
     .Dropdown {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-height: 272px;
 
 
         .Valeur {
@@ -27,7 +15,8 @@
             align-items: center;
             padding-left: 10px;
             padding-right: 10px;
-            width: 1003px;
+            max-width: 1220px;
+            width: 100%;
             height: 52px;
 
             @media (max-width: 375.2px) {
@@ -74,7 +63,8 @@
         .DescriptionValeur {
             position: relative;
             max-height: 0;
-            max-width: 997px;
+            max-width: 1210px;
+            width: 100%;
             overflow: hidden;
             font-family: 'Montserrat';
             font-weight: 400;
@@ -102,7 +92,7 @@
         }
 
         .DescriptionValeur.active {
-            max-height: 104px;
+            max-height: 150px;
             overflow: visible;
             opacity: 1;
 
@@ -115,4 +105,3 @@
             }
         }
     }
-}

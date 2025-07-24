@@ -1,40 +1,148 @@
 .location-page {
     display: flex;
     flex-direction: column;
-}
+    gap: 45px;
 
-img {
-        max-width: 1240px;
-        max-height: 520px;
-}
-.Information {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.DescriptionLoc {
-    max-width: 635px;
-    max-height: 77px;
-}
-
-.Hoststars {
-
-    .Hostinfo {
-        display: flex;
+    .Slideshow {
+        display:flex;
         flex-direction: row;
-        max-width: 167px;
-        max-height: 64px;
-
-        img {
-            max-width: 64px;
-            max-height: 64px;
-            border-radius: 30px;
+        position: relative;
+        max-width: 1240px;
+            max-height: 415px;
+        .flecheGauche {
+            position: absolute;
+            width: 96px;
+            height: 119px;
+            transform: rotate(180deg);
+            top: 140px;
+        }
+        .flecheDroite {
+            position: absolute;
+            width: 96px;
+            height: 119px;
+            transform: rotate(0deg);
+            top: 140px;
+            right: 0px;
+        }
+        .Photologement {
+            max-width: 1240px;
+            width: 100%;
+            max-height: 415px;
+            object-fit: cover;
+            border-radius: 25px;
         }
     }
-}
 
-.dropdowns {
-    display: flex;
-    flex-direction: row;
+    .Information {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: space-between;
+        height: 150px;
+        max-width: 1240px;
+
+        .tags {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        position: absolute;
+        top: 135px;
+        gap: 20px;
+
+        p {
+            padding-left: 17.5px;
+            padding-right: 17.5px;
+            padding-top: 2.5px;
+            padding-bottom: 2.5px;
+            height: 25px;
+            background: #FF6060;
+            border-radius: 10px;
+            height: 20px;
+
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 14px;
+            line-height: 143%;
+            letter-spacing: 0%;
+            text-align: center;
+            color: white;
+
+        }
+    }
+    }
+
+    .DescriptionLoc {
+        width: 635px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h1 {
+            height: 51px;
+            color:#FF6060;
+            margin: 0;
+        }
+    }
+
+    .Hoststars {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+        width: 196px;
+
+        .Hostinfo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 167px;
+            height: 64px;
+
+            img {
+                max-width: 64px;
+                max-height: 64px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .rating {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 196px;
+        height: 36px;
+    }
+
+    
+
+    .InfoDropdown {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1240px;
+
+        .Dropdown {
+            width: 582px;
+            max-height: 279px;
+
+            .Valeur {
+                max-width: 562px;
+            }
+
+            .DescriptionValeur {
+                max-width: 546px;
+                padding: 18px;
+
+                p {
+                    margin: 0px;
+                }
+            }
+        }
+
+
+    }
+
+
 }
