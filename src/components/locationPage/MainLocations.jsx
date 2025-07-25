@@ -12,9 +12,16 @@ function MainLocations({ location }) {
                 title="Photo du logement"
             />
             <div className="Information">
-                <div className="DescriptionLoc">
-                    <h1>{location.title}</h1>
-                    <p>{location.location}</p>
+                <div className="DescriptionsLoc">
+                    <div className="DescriptionLoc">
+                        <h1>{location.title}</h1>
+                        <p>{location.location}</p>
+                    </div>
+                    <div className="tags">
+                        {location.tags.map((tag, index) => (
+                            <p key={tag + index}>{tag}</p>
+                        ))}
+                    </div>
                 </div>
                 <div className="Hoststars">
                     <div className="Hostinfo">
@@ -23,12 +30,8 @@ function MainLocations({ location }) {
                     </div>
                     <RatingStars rating={location.rating} />
                 </div>
-                <div className="tags">
-                    {location.tags.map((tag, index) => (
-                        <p key={tag + index}>{tag}</p>
-                    ))}
-                </div>
             </div>
+            
             <DropdownLocation location={location} />
         </div>
     )

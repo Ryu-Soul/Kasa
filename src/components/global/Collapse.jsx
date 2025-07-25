@@ -1,4 +1,4 @@
-import '../../styles/global/Dropdown.scss'
+import '../../styles/global/Collapse.scss'
 import Arrow from '../../assets/images/arrow_back.png'
 import { useState } from 'react'
 
@@ -8,7 +8,7 @@ function Dropdown({ title, content }) {
 
     return (
         <div className="Dropdown">
-            <div className='Valeur'>
+            <div className='Topbar'>
                 <h1>{title}</h1>
                 <img
                     src={Arrow}
@@ -17,7 +17,7 @@ function Dropdown({ title, content }) {
                     onClick={() => setIsDescOpen(!isDescOpen)}
                 />
             </div>
-            <div className={`DescriptionValeur ${isDescOpen ? 'active' : ''}`}>
+            <div className={`Description ${isDescOpen ? 'active' : ''}`}>
                 {content}
             </div>
         </div>

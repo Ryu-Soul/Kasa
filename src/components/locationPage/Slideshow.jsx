@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import ArrowLogement from '../../assets/images/arrow-logement.png';
-
+import ArrowLogementD from '../../assets/images/arrow-logement-droite.png';
+import ArrowLogementG from '../../assets/images/arrow-logement-gauche.png';
 function Slideshow({ source, title }) {
   const [count, setCount] = useState(0);
 
@@ -16,13 +16,13 @@ function Slideshow({ source, title }) {
     <div className="Slideshow">
       <img src={source[count]} alt={title} className='Photologement'/>
       <img
-        src={ArrowLogement}
+        src={ArrowLogementG}
         alt="fleche gauche"
         className="flecheGauche"
         onClick={previousSlide}
       />
       <img
-        src={ArrowLogement}
+        src={ArrowLogementD}
         alt="fleche droite"
         className="flecheDroite"
         onClick={nextSlide}
