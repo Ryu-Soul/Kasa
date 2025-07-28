@@ -280,6 +280,14 @@
                 @media (min-width: 1023.02px) and (max-width: 1439px) {
                     width: 390px;
                 }
+                p {
+                    @media (min-width: 375.2px) and (max-width: 768px) {
+                    font-size: 14px;
+                }
+                @media (min-width: 769px) and (max-width: 1025px) { 
+                    font-size: 18px; 
+                }
+                }
             }
             .Description.ative {
                 padding: 16px 20px 20px;
