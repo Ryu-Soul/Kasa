@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import '../../styles/global/Header.scss'
 
 function Navbar() {
   return (
