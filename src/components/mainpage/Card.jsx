@@ -8,10 +8,11 @@ function Card() {
         <div className='gallery'>
             {Locations.map(({ title, cover, id }) => (
                 <Link to={`../locationPage/${id}`} key={id}>
-                    <div className='overlayCard'>
+                    
                     <div className='card'>
+                        <div className='overlayCard'>
+                        </div>
                         <img src={cover} alt={title}></img> <p>{title}</p>
-                    </div>
                     </div>
                 </Link>
             ))}

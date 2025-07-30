@@ -45,6 +45,21 @@
                 top: 116px;
             }
         }
+        .compteur {
+            position: absolute;
+            white-space: nowrap;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 18px;
+            width: 24px;
+            height: 32px;
+            top:86%;
+            left:49%;
+            color: white;
+            @media (max-width: 375.2px) {
+                display: none;
+            }
+        }
         .Photologement {
             max-width: 1240px;
             width: 100%;
@@ -280,14 +295,26 @@
                 @media (min-width: 1023.02px) and (max-width: 1439px) {
                     width: 390px;
                 }
-                p {
+                ul {
+                    margin-left: 0;
+                    padding-left: 0;
+                    li {
+                    list-style: none;
+                    font-family: 'Montserrat';
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 143%;
+                    letter-spacing: 0%;
+                    vertical-align: bottom;
+                    margin: 0;
                     @media (min-width: 375.2px) and (max-width: 768px) {
                     font-size: 14px;
                 }
                 @media (min-width: 769px) and (max-width: 1025px) { 
                     font-size: 18px; 
                 }
-                }
+                }}
+                
             }
             .Description.ative {
                 padding: 16px 20px 20px;

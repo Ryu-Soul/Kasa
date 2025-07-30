@@ -27,6 +27,11 @@ function Slideshow({ source, title }) {
         className="flecheDroite"
         onClick={nextSlide}
       />
+      {source.length > 1 && (
+        <div className="compteur">
+          {count + 1} / {source.length}
+        </div>
+      )}
     </div>
   );
 }

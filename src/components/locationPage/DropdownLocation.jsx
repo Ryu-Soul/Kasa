@@ -12,7 +12,11 @@ function DropdownLocation({ location }) {
         title='Équipements'
         content={
         location.equipments.map((item, index) => (
-          <p key={index}>{item}</p>
+          <ul key={index}>
+            <li key={index}>
+            {item}
+            </li>
+          </ul>
         ))
       }
       />
