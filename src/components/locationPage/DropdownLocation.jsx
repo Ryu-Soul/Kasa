@@ -6,7 +6,7 @@ function DropdownLocation({ location }) {
     <div className='InfoDropdown'>
       <Collapse
         title='Description'
-        content={location.description}
+        content={<p>{location.description}</p>}
       />
       <Collapse
         title='Équipements'

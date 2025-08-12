@@ -1,19 +1,19 @@
-import Dropdown from "../global/Collapse"
+import Collapse from "../global/Collapse"
 import { Valeurs } from '../../data/Valeurs'
 
-function Collapse() {
+function DropdownAbout() {
     return (
         <div className="Valeurs">
             {Valeurs.map((item, index) => (
-                <Dropdown 
+                <Collapse 
                 key={index} 
                 title={item.valeur}
                 content={<p>{item.Description}</p>}
                 >  
-                </Dropdown>
+                </Collapse >
             ))}
         </div>
     )
 }
 
-export default Collapse
+export default DropdownAbout
