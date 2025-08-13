@@ -1,4 +1,4 @@
-import '../../styles/MainHome.scss'
+import '../../styles/global/MainHome.scss'
 import '../../styles/aboutpage/About.scss'
 import Banner from '../global/Banner'
 import IMGabout from '../../assets/images/IMGabout.jpg'

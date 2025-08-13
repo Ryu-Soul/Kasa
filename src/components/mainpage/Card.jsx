@@ -8,7 +8,6 @@ function Card() {
         <div className='gallery'>
             {Locations.map(({ title, cover, id }) => (
                 <Link to={`../locationPage/${id}`} key={id}>
-                    
                     <div className='card'>
                         <div className='overlayCard'>
                         </div>
