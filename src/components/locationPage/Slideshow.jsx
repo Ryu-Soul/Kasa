@@ -7,7 +7,6 @@ function Slideshow({ source, title }) {
   const previousSlide = () => {
     setCount((prevCount) => (prevCount - 1 + source.length) % source.length);
   };
-
   const nextSlide = () => {
     setCount((prevCount) => (prevCount + 1) % source.length);
   };
