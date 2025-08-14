@@ -4,7 +4,7 @@
         align-items: center;
         width: 1023px;
         max-height: 272px;
-        @media (min-width: 375px) {
+        @media (max-width: 375px) {
             width: 335px;
         }
         @media (min-width: 376px) and (max-width: 1439px) {
