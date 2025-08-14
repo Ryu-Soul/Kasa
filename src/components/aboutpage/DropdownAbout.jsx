@@ -8,8 +8,8 @@ function DropdownAbout() {
                 <Collapse 
                 key={index} 
                 title={item.valeur}
-                content={<p>{item.Description}</p>}
-                >  
+                content={item.Description}
+                > 
                 </Collapse >
             ))}
         </div>

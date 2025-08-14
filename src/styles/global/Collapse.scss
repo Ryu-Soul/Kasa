@@ -4,6 +4,9 @@
         align-items: center;
         width: 1023px;
         max-height: 272px;
+        @media (min-width: 376px) and (max-width: 1439px) {
+            width: 90%;
+            }
         .Topbar{
             background: #FF6060;
             border-radius: 5px;
@@ -18,7 +21,7 @@
             height: 52px;
             max-height: 52px;
             @media (max-width: 375.2px) {
-                width: 335px;
+                width: 305px;
                 height: 30px;
             }
             @media (min-width: 376px) and (max-width: 1439px) {
@@ -58,14 +61,8 @@
             background-color: #F6F6F673;
             opacity: 0;
             transition: max-height 0.4s ease, opacity 0.4s ease;
-            p {    
-                font-weight: 400;
-                font-size: 18px; 
-                transform: translateY(-100px);
-                transition: transform 0.4s ease;   
-            }
             @media (max-width: 375.2px) {
-                width: 335px;
+                width: 295px;
                 font-size: 12px;
             }
             @media (min-width: 376px) and (max-width: 1439px) {
@@ -75,6 +72,16 @@
             ul {
                 transform: translateY(-100px);
                 transition: transform 0.4s ease;
+            }
+            p {
+                font-family: 'Montserat';
+                font-weight: 400;
+                font-size: 18px; 
+                transform: translateY(-100px);
+                transition: transform 0.4s ease;   
+                @media (max-width: 375.2px) {
+                font-size: 12px;
+            }
             }
         }
         .Description.active {

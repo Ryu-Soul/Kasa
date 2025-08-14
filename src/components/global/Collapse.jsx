@@ -18,7 +18,10 @@ function Collapse({ title, content }) {
                 />
             </div>
             <div className={`Description ${isDescOpen ? 'active' : ''}`}>
-                {content}
+                {typeof content === 'string' 
+                    ? <p>{content}</p> 
+                    : content
+                }
             </div>
         </div>
     )

@@ -67,6 +67,9 @@
             max-height: 415px;
             object-fit: cover;
             border-radius: 25px;
+            @media (max-width: 375.2px) {
+                height: 255px;
+            }
         }
     }
     .Information {
@@ -118,7 +121,7 @@
             }
         }
         p {
-            @media (min-width: 375px) and (max-width: 425px) {
+            @media (min-width: 376px) and (max-width: 425px) {
                 font-size: 14px;
             }
         }
@@ -248,7 +251,6 @@
         }
         .Dropdown {
             width: 582px;
-            
             @media (min-width: 375px) and (max-width: 425px) {
                 max-height: 500px;
                 width: 100%;
@@ -291,25 +293,22 @@
                 gap: 5px;
                 max-width: 542px;
                 font-family: 'Montserrat';
+                font-weight: 400;
                 font-size: 18px;
                 @media (min-width: 375.2px) and (max-width: 768px) {
-                    width: 295px;
-                    font-size: 14px;
+                    width: 295px; 
+                    font-size: 12px;
                 }
                 @media (min-width: 769px) and (max-width: 1025px) {
                     width: 295px;
-                    font-size: 18px;
-                    
                 }
                 @media (min-width: 1023.02px) and (max-width: 1439px) {
                     width: 390px;
                 }
                 ul {
-                    
                     margin-left: 0;
                     padding-left: 0;
                     margin: 0;
-                    
                     li {
                     list-style: none;
                     font-family: 'Montserrat';
@@ -319,14 +318,17 @@
                     letter-spacing: 0%;
                     vertical-align: bottom;
                     margin: 0;
-                    @media (min-width: 375.2px) and (max-width: 768px) {
+                    @media (max-width: 375.2px) {
+                    font-size: 12px;
+                }
+                    @media (min-width: 376px) and (max-width: 768px) {
                     font-size: 14px;
                 }
                 @media (min-width: 769px) and (max-width: 1025px) { 
                     font-size: 18px; 
                 }
-                }}
-                
+                }
+            } 
             }
             .Description.ative {
                 padding: 16px 20px 20px;
