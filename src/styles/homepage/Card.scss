@@ -10,45 +10,37 @@
     background: #F6F6F6;
     border-radius: 25px;
     gap: 60px;
-
     @media (max-width: 376px) {
         padding: 0;
         width: 335px;
         gap: 22px;
         background: none;
     }
-
     @media (min-width: 376px) and (max-width: 1439.8px) {
         width: 86%;
     }
-
     a {
         width: 340px;
         height: 340px;
         text-decoration: none;
         position: relative;
-
         @media (max-width: 376px) {
             width: 100%;
             max-width: 335px;
             height: 255px;
         }
-
         @media (min-width: 377px) and (max-width: 767.2px) {
             width: 300px;
             height: 160.41px;
         }
-
         @media (min-width: 768px) and (max-width: 1024px) {
             width: 250px;
             height: 167px;
         }
-
         @media (min-width: 1025px) and (max-width: 1439px) {
             width: 340px;
             height: 240px;
         }
-
         .card {
             position: relative;
             display: flex;
@@ -58,27 +50,22 @@
             height: 100%;
             border-radius: 25px;
             z-index: 1;
-
             @media (max-width: 375.2px) {
                 width: 335px;
                 height: 255px;
             }
-
             @media (min-width: 377px) and (max-width: 767px) {
                 width: 300px;
                 height: 160.41px;
             }
-
             @media (min-width: 768px) and (max-width: 1024px) {
                 width: 250px;
                 height: 167px;
             }
-
             @media (min-width: 1025px) and (max-width: 1439px) {
                 width: 340px;
                 height: 240px;
             }
-
             img {
                 width: 100%;
                 height: 100%;
@@ -87,7 +74,6 @@
                 border-radius: 25px;
             }
         }
-
         .overlayCard {
             position: absolute;
             top: 0;
@@ -103,28 +89,23 @@
             height: 100%;
             border-radius: 25px;
             z-index: 10;
-
             @media (max-width: 375.2px) {
                 width: 335px;
                 height: 255px;
             }
-
             @media (min-width: 377px) and (max-width: 767px) {
                 width: 240px;
                 height: 160.41px;
             }
-
             @media (min-width: 768px) and (max-width: 1024px) {
                 width: 250px;
                 height: 167px;
             }
-
             @media (min-width: 1025px) and (max-width: 1439px) {
                 width: 340px;
                 height: 240px;
             }
         }
-    
         p {
             position: absolute;
             top: 268px;
@@ -138,7 +119,7 @@
             @media (max-width: 376px) {
                 width: 295.58px;
                 height: 52px;
-                top: 170px;
+                top: 188px;
                 left: 19.71px;
                 font-size: 18px;
             }

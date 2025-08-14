@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 
 function Card() {
     return (
-        
         <div className='gallery'>
             {Locations.map(({ title, cover, id }) => (
                 <Link to={`../locationPage/${id}`} key={id}>
