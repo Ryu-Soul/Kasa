@@ -1,7 +1,5 @@
 import { useParams } from 'react-router-dom'
-import { Locations } from '../data/Locations'
-import Header from '../components/global/Header'
-import Footer from '../components/global/Footer'
+import Locations from '../data/Locations.json'
 import Error from './Error'
 import MainLocations from '../components/locationPage/MainLocations'
 
@@ -14,11 +12,9 @@ function LocationsPage() {
     }
 
     return (
-        <div className='page'>
-        <Header />
-        <MainLocations location={Location}/>
-        <Footer />
-        </div>
+        <>  
+        <MainLocations location={Location}/> 
+        </>
     )
 }
 

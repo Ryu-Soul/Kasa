@@ -1,4 +1,4 @@
-import { Locations } from '../../data/Locations.jsx'
+import Locations from '../../data/Locations.json'
 import '../../styles/homepage/Card.scss'
 import { Link } from 'react-router-dom'
 

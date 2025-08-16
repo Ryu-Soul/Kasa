@@ -1,15 +1,19 @@
-import Header from '../components/global/Header'
-import Footer from '../components/global/Footer'
+import './../styles/global/MainHome.scss'
+import './../styles/aboutpage/About.scss'
+import Banner from '../components/global/Banner'
+import IMGabout from './../assets/images/IMGabout.jpg'
+import DropdownAbout from '../components/aboutpage/DropdownAbout'
 import '../styles/global/Global.scss'
-import Mainabout from '../components/aboutpage/Mainabout'
+
 
 function About() {
   return (
-    <div className="page">
-      <Header />
-      <Mainabout />
-      <Footer />
-    </div>
+    <>
+      <div className="main">
+            <Banner picture={IMGabout} title={''} />
+            <DropdownAbout />
+      </div>
+    </>
   )
 }
 

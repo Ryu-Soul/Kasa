@@ -10,4 +10,27 @@
     @media (min-width: 376px) and (max-width: 1439px) {
             width: 100%;
     }
+    .Topbar {
+        width: 100%;
+        @media (max-width: 375.2px) {
+                    width: 305px;
+                    height: 30px;
+                }
+                @media (min-width: 376px) and (max-width: 425.2px) {
+                    height: 32px;
+                    width: 92%;
+                }
+                @media (min-width: 426px) and (max-width: 768.2px) {
+                    height: 48px;
+                    width: 94%;
+                }
+                @media (min-width: 769px) and (max-width: 1024.2px) {
+                    height: 60px;
+                    width: 96%;
+                }
+                @media (min-width: 1025px) and (max-width: 1439.2px) {
+                    height: 80px;
+                    width: 98%;
+                }
+    }
 }

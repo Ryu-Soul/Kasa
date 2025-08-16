@@ -3,6 +3,7 @@
         flex-direction: column;
         align-items: center;
         max-height: 272px;
+        width: 100%;
         @media (max-width: 375.2px) {
             width: 335px;
         }
@@ -16,7 +17,6 @@
             padding-left: 15px;
             padding-right: 15px;
             max-width: 993px;
-            width: 100%;
             height: 52px;
             max-height: 52px;
             @media (max-width: 375.2px) {
@@ -29,8 +29,14 @@
                 font-size: 24px;
                 vertical-align: middle;
                 color: white;
-                @media (max-width: 375.2px) {
-                    font-size: 13px;
+                @media (min-width: 375px) and (max-width: 425.2px) {
+                        font-size: 13px;
+                    }
+                    @media (min-width: 426px) and (max-width: 768.2px) {
+                        font-size: 14.8px;
+                    }
+                    @media (min-width: 769px) and (max-width: 1024.2px) {
+                        font-size: 16px;
                 }
             }
             img {
@@ -82,8 +88,15 @@
                 transform: translateY(-100px);
                 transition: transform 0.4s ease;   
                 @media (max-width: 375.2px) {
-                font-size: 12px;
-            }
+                    font-size: 12px;
+                }
+                @media (min-width: 376px) and (max-width: 768px) {
+                    font-size: 14px;
+                    max-width: 597px;
+                }
+                @media (min-width: 1023.02px) and (max-width: 1439px) {
+                    width: 390px;
+                }
             }
         }
         .Description.active {

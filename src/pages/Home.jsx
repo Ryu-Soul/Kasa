@@ -1,15 +1,17 @@
-import Header from '../components/global/Header'
-import MainHome from '../components/mainpage/Mainhome'
-import Footer from '../components/global/Footer'
+import '../styles/global/MainHome.scss'
+import Banner from '../components/global/Banner'
+import Card from '../components/mainpage/Card'
+import IMGbanner from './../assets/images/IMG-banner.png'
 import '../styles/global/Global.scss'
 
 function Home() {
   return (
-  <div className='page'>
-    <Header />
-    <MainHome />
-    <Footer />
-  </div>
+  <>
+    <div className="main">
+            <Banner picture={IMGbanner} title={'Chez vous, partout et ailleurs'} />
+            <Card />
+    </div>
+  </>
   )
 }
 
