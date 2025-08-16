@@ -38,13 +38,19 @@
                 width: 295px;
                 font-size: 12px;
             }
-            @media (min-width: 376px) and (max-width: 424.2px) {
-                width: 97%;
+            @media (min-width: 376px) and (max-width: 425.2px) {
+                width: 91%;
                 font-size: 14px;
             }
-            @media (min-width: 425px) and (max-width: 1439px) {
-                font-size: 16px;
+            @media (min-width: 426px) and (max-width: 768.2px) {
                 width: 93%;
+                font-size: 16px;
             }
+            @media (min-width: 769px) and (max-width: 1024.2px) {
+                width: 95%;
+            }
+            @media (min-width: 1025px) and (max-width: 1439.2px) {
+                width: 97%;
+            }            
     }
 }
