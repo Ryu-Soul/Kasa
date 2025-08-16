@@ -10,15 +10,13 @@ function DropdownLocation({ location }) {
       />
       <Collapse
         title='Équipements'
-        content={
+        content={<ul>{
         location.equipments.map((item, index) => (
-          <ul key={index}>
-            <li key={index}>
+          <li key={index}>
             {item}
-            </li>
-          </ul>
+          </li>
         ))
-      }
+      }</ul>}
       />
     </div>
   )

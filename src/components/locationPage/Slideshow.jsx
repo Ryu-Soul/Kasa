@@ -14,6 +14,8 @@ function Slideshow({ source, title }) {
   return (
     <div className="Slideshow">
       <img src={source[count]} alt={title} className='Photologement'/>
+      {source.length > 1 && (
+      <div className='fleches'>
       <img
         src={ArrowLogementG}
         alt="fleche gauche"
@@ -26,6 +28,8 @@ function Slideshow({ source, title }) {
         className="flecheDroite"
         onClick={nextSlide}
       />
+      </div>
+      )}
       {source.length > 1 && (
         <div className="compteur">
           {count + 1} / {source.length}
